@@ -43,9 +43,76 @@
         background-image: linear-gradient(0.0deg, #ff7500 0%, #ffa600 100%);
         color: #fff
         margin-right: 11px
+        transition: 0.4s
+        &:hover
+            background-image: linear-gradient(0.0deg, #ffa600  0%, #ff7500 100%);
+            color: #000
     &__btn_two
         border: 2px solid #ff8a00;
         color: #000
+        transition: 0.4s
+        &:hover
+            background-color: #fff
     &__button
         display: flex
+    &__modals
+        display: none;
+        justify-content: center
+        align-items: center
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-color: rgba(0,0,0,.8);
+    &__modal
+        width: 320px
+        height: 400px
+        background: rgb(64,23,125);
+        background: linear-gradient(90deg, rgba(64,23,125,1) 1%, rgba(227,161,168,1) 65%, rgba(33,2,68,1) 100%);
+        border-radius: 20px
+        box-shadow: 0 0 20px 0 rgba(255,255,255,1);
+    &__form
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        height: 100%
+    &__item
+        display: flex
+        flex-direction: column
+    &__text
+        font-family: 'Roboto', sans-serif;
+        color: #fff
+        font-size: 20px
+    &__input
+        width: 250px
+        height: 25px
+        padding-left: 10px
+        border: none
+        border-radius: 10px
+        font-family: 'Roboto', sans-serif;
+    &__message
+        border: none
+        padding-left: 10px
+        border-radius: 10px
+        font-family: 'Roboto', sans-serif;
+    &__add
+        width: 270px
+        height: 30px
+        border: none
+        cursor: pointer
+        font-family: 'Roboto', sans-serif;
+        background-image: linear-gradient(0.0deg, #ff7500 0%, #ffa600 100%);
+        color: #fff
+        border-radius: 10px
+    &__close
+        color: #fff
+        font-size: 40px
+        margin: 0
+        position: absolute
+        top: 70px
+        cursor: pointer
     

@@ -1,4 +1,9 @@
 import Swiper, { Navigation } from 'swiper';
+import SwiperCore, { Autoplay } from 'swiper/core';
+import {Swiper as SwiperClass, Mousewheel} from 'swiper/core';
+
+SwiperClass.use([Mousewheel]);
+SwiperCore.use([Autoplay]);
 Swiper.use([Navigation]);
 
 let slider = () => {
@@ -40,6 +45,12 @@ let slider = () => {
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
+        autoplay: {
+          delay: 4000
+        },
+        mousewheel: {
+          releaseOnEdges: true,
+        },
         loopFillGroupWithBlank: true,
         pagination: {
           el: '.swiper-pagination',
