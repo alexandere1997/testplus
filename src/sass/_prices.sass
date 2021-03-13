@@ -1,0 +1,115 @@
+.prices
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 83px
+    &__container
+        width: 90%
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__head
+        display: flex
+        justify-content: flex-start
+        align-items: center
+    &__circle
+        width: 13px;
+        height: 13px;
+        background-color: #f98900;
+        border-radius: 80px
+        margin-right: 13px
+        margin-top: -44px
+    &__title
+        margin: 0
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        line-height: 1.2;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 44px
+    &__item
+        padding: 15px
+        border-radius: 6px;
+        transition: 0.4s
+        margin-bottom: 10px
+        &:hover
+            box-shadow: 0px 4px 27px 0px rgba(70,67,67,0.51);
+        &:hover .prices__btn
+            opacity: 1
+            transition: 0.4s
+    &__images
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 263px;
+        height: 180px;
+        background-color: #d0ebfd;
+        border-radius: 6px;
+    &__heading
+        font-family: 'Roboto', sans-serif;
+        margin: 0
+        font-size: 16px;
+        line-height: 11px;
+        font-weight: bold;
+        color: #333333;
+        margin-top: 15px
+        margin-bottom: 9px
+    &__subtitle
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        color: #666666;
+        margin: 0
+        margin-bottom: 17px
+    &__info
+        display: flex
+        align-items: center
+    &__price
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 109px;
+        height: 30px;
+        background-color: #0064c1;
+        border-radius: 3px;
+        margin-right: 11px
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+        color: #ffffff;
+    &__bold
+        font-weight: bold
+    &__size
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 145px;
+        height: 30px;
+        border: 1px solid #a7a7a7;
+        border-radius: 3px;
+        color: #a7a7a7
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 200px;
+        height: 51px;
+        background-image: linear-gradient(0.0deg, #ff7500 0%, #ffa600 100%);
+        border-radius: 25px;
+        text-decoration: none
+        margin: 0 auto
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 42px;
+        font-weight: 100;
+        color: #ffffff;
+        margin-top: 35px
+        opacity: 0
+        transition: 0.4s
